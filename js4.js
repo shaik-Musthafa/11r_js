@@ -34,7 +34,7 @@
 //     console.log("delete for me2");
 // }
  // check the largest numb among three numbs using terinary and if-else
- let x = 5;
- let y = 6;
- let z = 7;
+//  let x = 5;
+//  let y = 6;
+//  let z = 7;
 // message 
