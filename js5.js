@@ -1,8 +1,12 @@
-// let user = "user"
-// if (user=="admin"){
+// let user = "employee"
+// if (user =="admin"){
 //     console.log("logged in as admin")
-// }else if(user=="employe"){
+// }else if(user =="employee"){
 //     console.log("logged in as employee")
+// } else if(user =="super_user"){
+//     console.log("logged in as super_user")
+// } else if(user == "unauthorized user"){
+//     console.log("unauthorized user");   
 // }
 // let user = 1;
 // let user2 = 2;
@@ -66,15 +70,13 @@
 //deteremine the number  of digits in a given number tc-1 i/p 123, expected o/p-3 , tc-2 4567 expected o/p : 4
 // let j= [1,2,3]
 // let p=[4,5,6,7]
-// for(i=1; i<=1; i++){
-    // console.log(j.length,p.length)
-// }
+// console.log(j.length,p.length)
 // else if- ladder
 //1. write a program to determine the fare for a taxi ride based on the distance travelled(0-5:$5,5-10:$10,10-20$20, above 20 $30 and for every additional km )
 // 
 // Write a program to determine the discount on a product based on the quantity purchased(1-5 units: no discount,6-10:5% discount,11-20: 10% discount, above 20units -15%discount)
-// let x= 30;
-// if(x>=0 && x<=5){
+// let x= 0;
+// if(x>=1 && x<=5){
 //     console.log(`no discount is available`);
 // }else if(x>5 && x<=10){
 //     console.log(`5% discount is available`);
@@ -83,45 +85,48 @@
 // } else if(x>=20){
 //     console.log(`15% discount is available`);
 // }
+// else{
+//     console.log('discount is not available on the selected item');  
+// }
 // ------- //
 // switch statement
 //1. write a program to determine the type of coffee based on the user's selection(1:espresso, 2:cappuccino, 3:latte, 4:Mocha)
-let value=4;
-switch (value){
-    case 1:
-        console.log(`you have selected espresso`);
-        break;
-    case 2:
-        console.log(`you have selected cappuccino`);
-        break;
-    case 3:
-        console.log(`you have selected latte`);
-        break;
-    case 4:
-        console.log('you have selected Mocha')
-        break;
-    default:
-        console.log(`you have selected invalid option`);
-        break;
-}
+// let value=4;
+// switch (value){
+//     case 1:
+//         console.log(`you have selected espresso`);
+//         break;
+//     case 2:
+//         console.log(`you have selected cappuccino`);
+//         break;
+//     case 3:
+//         console.log(`you have selected latte`);
+//         break;
+//     case 4:
+//         console.log('you have selected Mocha')
+//         break;
+//     default:
+//         console.log(`you have selected invalid option`);
+//         break;
+// }
 //2. Write a program to determine the shiping cost based on the region(1:North America($10), 2:south America($20), 3:Europe($30)), 4:asia($40)),5:Australia($50)))
-let cost= 4;
-switch(cost){
-    case 1:
-        console.log(`shipping cost for North America is $10`);
-        break;
-    case 2:
-        console.log(`shipping cost for South America is $10`)
-        break;
-    case 3:
-        console.log(`shipping cost fro Europe is $ 30`);
-        break;
-    case 4:
-        console.log(`shipping cost for Asia is $10`);
-        break;
-    case 5:
-        console.log(`shipping cost for Australia is $10`);
-        break;
-    default:
-        console.log("invalid shipping address")
-}
+// let cost= 4;
+// switch(cost){
+//     case 1:
+//         console.log(`shipping cost for North America is $10`);
+//         break;
+//     case 2:
+//         console.log(`shipping cost for South America is $10`)
+//         break;
+//     case 3:
+//         console.log(`shipping cost fro Europe is $ 30`);
+//         break;
+//     case 4:
+//         console.log(`shipping cost for Asia is $10`);
+//         break;
+//     case 5:
+//         console.log(`shipping cost for Australia is $10`);
+//         break;
+//     default:
+//         console.log("invalid shipping address")
+// }
