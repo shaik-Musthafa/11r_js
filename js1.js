@@ -21,13 +21,13 @@
 // bitwise operators
 // Arthimetic operators
 // addition, substraction, multiplication, division, modules, increment(++(post/pre)), decrement(--(post/pre))
-let x = 1;
-let y = 10;
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
-console.log(x % y);
-console.log(x / y);
+// let x = 1;
+// let y = 10;
+// console.log(x + y);
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x % y);
+// console.log(x / y);
 console.log(`add of x and y is ${x + y}`)// here we should use backticks instead of quotes
 //increment
 let z = 5;
