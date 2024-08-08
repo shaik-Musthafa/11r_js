@@ -1,4 +1,4 @@
-What is the result of 10 + '5'?
+// What is the result of 10 + '5'?
 // let x = 10+"5";
 // console.log(x);
 //What is the value of x after x = 10; x += 5;?
