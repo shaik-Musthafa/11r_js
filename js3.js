@@ -56,3 +56,33 @@ console.log(j**2);
 // console.log(++x)
 // let x = 10;/
 // console.log(x++);
+// let x = 10;
+// let y= --x;
+// console.log(x,y);
+// let x = 10;
+// let y= x--;
+// console.log(x,y);
+//ternary operator
+// let x =10;
+// let y = x>5 ? 'yes' : 'no';
+// console.log(y)
+// let x =10;
+// let y = x>5? 'yes':x>3 ? 'maybe':'no';
+// console.log(y)
+//optional chaining
+// const obj ={a:{b:'c'}};
+// console.log(obj?.a?.b);
+// const obj ={a:{b:'c'}};
+// console.log(obj?.a?.c)
+// const obj= {a:{b:'c'}};
+// console.log(obj?.b?.c);
+//nullish chaining
+// let x = null ;
+// let  y= x??'default';
+// console.log(y);
+// let x = undefined;
+// let y = x ?? 'default';
+// console.log(y);
+// let x = 0;
+// let y =x ??'default';
+// console.log(y);
