@@ -20,6 +20,8 @@
 // let x =10;
 // let y = 3
 // console.log(x%3);
+j=10;
+console.log(j**2);
 //what is result of 10>5 && 5<10
 // let x = 5;
 // let y = 10;
