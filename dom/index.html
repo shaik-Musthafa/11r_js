@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Div with Image and Text</title>
+</head>
+<body>
+
+    <img src="" alt="">
+
+    <script>
+    
+        let mydiv = document.createElement("div");
+        mydiv.style.border = "2px solid white";    
+        mydiv.style.height = "350px";              
+        mydiv.style.width = "250px";               
+        mydiv.style.borderRadius = "50px";         
+        mydiv.style.backgroundColor = "cornsilk";  
+        mydiv.style.marginLeft="500px"
+        mydiv.style.marginTop="150px"
+        let i = document.getElementsByTagName("img")[0];
+        i.setAttribute("src", "../assests/luffy3.png");  
+        i.style.filter = "drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5))";
+        i.style.borderRadius = "50%";                  
+        i.style.height = "80px";
+        i.style.marginLeft="80px" 
+        i.style.marginTop="15px" 
+        mydiv.appendChild(i);
+        let line=document.createElement("hr")
+        mydiv.appendChild(line)
+        let title = document.createElement("div");
+        // title.style.marginLeft="20px"
+        title.style.marginTop="35px"
+        title.style.textAlign="center"
+        title.innerHTML += "<p>Name   : Musthafa</p>";
+        title.innerHTML += "<p>ID     : 1010101</p>";
+        title.innerHTML += "<p>Mb.No  : Musthafa</p>";
+        title.innerHTML += "<p>Address: 10kc</p>";
+
+        // Append the title div to the main div
+        mydiv.appendChild(title);
+
+        // Append the main div to the document body
+        document.body.appendChild(mydiv);
+    </script>
+
+</body>
+</html>
