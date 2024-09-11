@@ -3,46 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Div with Image and Text</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <img src="" alt="">
-
     <script>
-    
-        let mydiv = document.createElement("div");
-        mydiv.style.border = "2px solid white";    
-        mydiv.style.height = "350px";              
-        mydiv.style.width = "250px";               
-        mydiv.style.borderRadius = "50px";         
-        mydiv.style.backgroundColor = "cornsilk";  
-        mydiv.style.marginLeft="100px"
-        let i = document.getElementsByTagName("img")[0];
-        i.setAttribute("src", "../assests/luffy3.png");  
-        i.style.filter = "drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5))";
-        i.style.borderRadius = "50%";                  
-        i.style.height = "80px";
-        i.style.marginLeft="80px" 
-        i.style.marginTop="15px" 
-        mydiv.appendChild(i);
-        let line=document.createElement("hr")
-        mydiv.appendChild(line)
-        let title = document.createElement("div");
-        // title.style.marginLeft="20px"
-        title.style.marginTop="35px"
-        title.style.textAlign="center"
-        title.innerHTML += "<p>Name   : Musthafa</p>";
-        title.innerHTML += "<p>ID     : 1010101</p>";
-        title.innerHTML += "<p>Mb.No  : Musthafa</p>";
-        title.innerHTML += "<p>Address: 10kc</p>";
-
-        // Append the title div to the main div
-        mydiv.appendChild(title);
-
-        // Append the main div to the document body
-        document.body.appendChild(mydiv);
+        let x=Math.random()
+        console.log(Math.floor(x*900000+100000))
+        function otp(){
+            return Math.floor(Math.random()*9000+1000)
+        }document.body.innerHTML=otp()
+        // x=x*10000
+        // console.log(Math.floor(x))
+    //     function  demo(x){
+    //         Math.random()
+    //     }
+    //     demo(6)
+    // </script>
+    <!-- <button onclick="demo()">touch me</button>
+    <p id="para"></p>
+    <script>
+    let arr=['hello','hiee','some','thing','happy'] 
+    let btn=document.getElementsByTagName("button")
+    btn[0].addEventListener('click',()=>{
+        let x=Math.random()
+        let random=Math.floor(x*99999+100000)
+        let p=document.getElementById("para")
+        p.innerHTML=random
+        p.style.backgroundColor=`#${random*6}`
+        p.style.color=`#${parseInt(random)*8}`
+        p.style.fontSize="50px"
+    }) -->
     </script>
+    <!-- <form id="frm1">
+        <input type="text"> 
+        <p></p>
+    <script>
+        let form=document.getElementById("frm1")
+        form.addEventListener("submit",()=>{
+            let x=document.getElementsByTagName("p")[0]
+            console.log(x.value)
+        })
+    </script> -->
+    <!-- <form>
+        <input id="id1" type="text"><br><br>
+        <input id="id2" type="submit">
+        <p id="ip"></p>
+    </form>
+    <script>
+        let form=document.getElementsByTagName("form")[0]
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+        let inp=document.getElementsByTagName("input")
+        let num=inp[0].value
+        let p=document.getElementById("ip")
+        if(num%2==0){
+            p.innerHTML=`${num} is even`
+        }else{
+            p.innerHTML=`${num} is odd`
+        }
+        }) 
+    </script> -->
+    <!-- <form></form> -->
+    <!-- <button onclick="demo()" id="btn">click me</button> -->
+    <!-- <script>
+        let arr=["hi","hello","bye"]
+        let count=0
+        let ul=document.createElement("ul")
+        document.body.appendChild(ul)
+        function demo(){
+            if(count<arr.length){
+                let li= document.createElement("li")
+                // li.textContent = arr[count];
+                ul.appendChild(li)
+                count++
+            }else{
+                alert("no more data to add")
+            }
+        }
+        
+    </script> -->
+  
+    <!-- <p></p>
+<script>
+    let btn=document.getElementsByTagName("button")[0]
+    btn.addEventListener("click",()=>{
+        let x=Math.random();
+        let random=Math.floor((x*99999+100000))
+        let p=document.getElementsByTagName("p")
+        p[0].innerHTML=random
+        p[0].style.backgroundColor=`#${6787}`
+    })
+</script> -->
 
 </body>
 </html>

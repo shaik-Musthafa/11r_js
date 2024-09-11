@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(231, 231, 154),#6789);
+            display: grid; 
+            justify-content: center;
+            /* justify-items: center; */
+            /* align-items: center; */
+        }
+        form{
+            position: relative;
+            left: 10px;
+            height: 330px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 5px 2px 10px rgb(26, 20, 13) ;
+            display: grid;
+            row-gap: 0px;
+            padding: 10px 0px 10px 0px;
+            background: linear-gradient(rgba(119, 156, 193, 0.6),#3143);
+            justify-items: center;
+        }
+        input{ 
+            width: 150px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgba(186, 110, 224, 0.2)
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <input type="text" required id="id1" placeholder="firstname"><br>
+        <input type="text" required  id="id2" placeholder="lastname"><br>
+        <input type="text" required  id="id3" placeholder="inst name"><br>
+        <input type="text" required  id="id4" placeholder="age"><br>
+        <input type="text" required  id="id5" placeholder="mb:no"><br>
+        <input type="text" required  id="id6" placeholder="Address"><br>
+        <input type="file" required  class="file" id="id7" name="" id="img"><br>
+        <input type="submit" required  name="" id="submit">
+    </form>
+    <br><br><br>
+    <script>
+        let x=document.createElement("div")
+        x.style.borderRadius="10px"
+        x.style.boxShadow="5px 4px 40px 5px"
+        x.style.height="350px"
+        x.style.width="250px"
+        x.style.marginTop = "20px"; 
+        x.style.display = "flex"; 
+        x.style.justifyContent = "center";
+        document.body.appendChild(x)
+        let form=document.getElementById("form")
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault()
+            let firstName=document.getElementById("id1").value
+            let lastName=document.getElementById("id2").value
+            let instituteName=document.getElementById("id3").value
+            let age=document.getElementById("id4").value
+            let mobileNo=document.getElementById("id5").value
+            let address=document.getElementById(id6).value
+            let selectPic=document.getElementById("id7")
+            if(selectPic.files==selectPic.files[0]){
+                reader.onload=function(e){
+                    x.innerHTML=`
+                    "<img="
+                    `
+                }
+            }
+        })
+        
+    </script>
+</body>
+</html>

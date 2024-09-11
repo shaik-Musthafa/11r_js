@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h4 id="hi" ondblclick="demo()">click me</h4>
+    <script>
+        function demo(){
+            let x=document.getElementById("hi")
+            x.style.backgroundColor="green"
+            x.innerHTML="<p>hello</p>"
+        }
+    </script> -->
+    <!-- <button id="btn">click me</button>
+    <script>
+        let x= document.getElementById("btn")
+        x.addEventListener("click",()=>{
+            let q=document.createElement("h4")
+                q.innerHTML="hello sir"
+                document.body.append(q)
+            document.body.style.backgroundColor="orange"
+        })
+        let y = document.getElementById("btn")
+        y.addEventListener("dblclick",()=>{
+            let p =document.createElement("h4")
+            p.innerHTML="wfgwar"
+            document.body.appendChild(p)
+            document.body.style.backgroundColor="green"
+            
+        }) -->
+        <button id="btn">Click me</button>
+        <script>
+            let x = document.getElementById("btn");
+            x.addEventListener("click", () => {
+                document.body.style.backgroundColor = "orange";
+                let q= document.createElement("h4")
+                q.innerHTML="hiee"
+                document.body.appendChild(q)
+                console.log(q);
+                
+            });
+            let y=document.getElementById("btn")
+            y.addEventListener("dblclick", () => {
+                
+                document.body.style.backgroundColor = "green"; 
+            });
+            let z= document.getElementById("btn")
+            z.addEventListener("click",()=>{
+                document.body.backgroundColor="red"
+            })
+        </script>
+        
+           
+    </script>
+</body>
+</html>
