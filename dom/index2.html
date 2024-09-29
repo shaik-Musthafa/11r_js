@@ -31,7 +31,7 @@
             document.body.style.backgroundColor="green"
             
         }) -->
-        <button id="btn">Click me</button>
+        <!-- <button id="btn">Click me</button>
         <script>
             let x = document.getElementById("btn");
             x.addEventListener("click", () => {
@@ -54,6 +54,18 @@
         </script>
         
            
+    </script> -->
+    <ul id="list">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+    </ul>
+    <script>
+        let parent=document.querySelector("ul")
+        parent.addEventListener("click",(event)=>{
+            let target=event.target
+            console.log("heloo hiee",target.textContent)
+        })
     </script>
 </body>
 </html>

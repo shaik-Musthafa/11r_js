@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form"> 
+        <input type="text" id="ip1"><br><br>
+        <input type="text" id="ip2"><br><br>
+        <input type="submit" id="ip2">
+    </form>
+    <p id="para"></p>
+    <script>
+        let form = document.getElementById("form");
+        form.addEventListener("submit", (e) => {
+            console.log(e);
+            e.preventDefault();
+            let inp=document.getElementById("ip1")
+            let num = inp.value
+            let p1=document.getElementById("para")
+            if(num%2==0){
+                p1.innerHTML=`${num} is even`
+            }else{
+                p1.innerHTML=`${num} is odd`
+            }
+            // let inp1=document.getElementById("ip2")
+            // let result= inp.value+inp1.value
+            // let p = document.getElementById("para");
+            // p.style.color=`red`
+            // p.innerHTML = "Form Submitted...!";
+        });
+    </script>
+    
+    </script>
+    <script>
+        // function demo(event){
+        //     event.prevenDefault()
+        //     let p =document.getElementById("para")
+        //     p.innerHTML="form submitted"
+        // }
+    </script>
+</body>
+</html>

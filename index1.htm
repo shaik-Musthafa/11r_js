@@ -75,18 +75,53 @@
             alert("enter a valid num")
         }
     </script> -->
+    <button id="btn">click me</button>
     <script>
-         // to add the even or position nums
-        num = prompt("enter a num: ")
-        sum =0
-        for(i of num){
-            if(!(i%2==0)){
-                sum = sum+Number(i)
-            }
-        }
-        console.log(sum);
-        
+        let btn=document.getElementById("btn")
+        window.addEventListener("click",()=>{
+            document.body.style.background="black"
+            document.style.color="white"
+            document.createElement("div")
+            div.innerHTML="hello this me"
+            div.appendChild(button)
+        })
+        const btn2=document.getElementById("btn")
+        window.addEventListener("dblclick",()=>{
+            document.body.style.background="white"
+            document.body.style.color="black"
+            })
     </script>
+    <!-- <button id="btn">Enable Dark Mode</button>
+
+    <script>
+      let btn3 = document.getElementById("btn");
+      let isDarkMode = false;
+      btn.addEventListener("click", () => {
+        isDarkMode = !isDarkMode;
+         if (isDarkMode) {
+          document.body.style.background = "black";
+          document.body.style.color = "white";
+          btn.textContent = "Disable Dark Mode"; 
+          document.body.style.background = "white";
+          document.body.style.color = "black";
+          btn.textContent = "Enable Dark Mode"; 
+        }
+      });
+    </script> -->
+    
+    <!-- <script> -->
+    <!-- //      // to add the even or position nums
+    //     // num = prompt("enter a num: ")
+    //     // sum =0
+    //     // for(i of num){
+    //     //     if(!(i%2==0)){
+    //     //         sum = sum+Number(i)
+    //     //     }
+    //     // }
+    //     // console.log(sum); -->
+        
+        
+    <!-- // </script> -->
     
 </body>
 </html>

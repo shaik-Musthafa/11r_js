@@ -6,19 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <!-- <script>
         let x=Math.random()
         console.log(Math.floor(x*900000+100000))
         function otp(){
             return Math.floor(Math.random()*9000+1000)
-        }document.body.innerHTML=otp()
-        // x=x*10000
+        }document.body.innerHTML=otp() -->
+        <!-- // x=x*10000
         // console.log(Math.floor(x))
     //     function  demo(x){
     //         Math.random()
     //     }
     //     demo(6)
-    // </script>
+    // </script> -->
     <!-- <button onclick="demo()">touch me</button>
     <p id="para"></p>
     <script>
@@ -94,6 +94,27 @@
         p[0].style.backgroundColor=`#${6787}`
     })
 </script> -->
+<script>
+    let str1 = prompt("Enter a string: ");
 
+function demo(str) {
+    let x = 0;
+    let y = str.length - 1;
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[x] !== str[y]) {
+            console.log("Not a palindrome");
+            alert("Not a palindrome")
+            return;
+        }
+        x++;
+        y--;
+    }
+    console.log("Palindrome");
+    alert("Palindrome")
+}
+
+demo(str1);
+
+</script>
 </body>
 </html>

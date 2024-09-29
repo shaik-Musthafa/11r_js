@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myform">
+        <input type="text" id="ip1" >
+        <input type="text" id="ip2">
+        <input type="submit" id="ip3">
+    </form>
+    <p id="p1"></p> 
+    <p id="p2"></p>
+    <!-- <script>
+        let form=document.getElementById("myform")
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            let ip1=document.getElementById("ip1")
+            let ip2=document.getElementById("ip2")
+            let data={name:ip1.value,city:ip2.value}
+            localStorage.setItem("Details",JSON.stringify(data))
+            console.log(data);
+            // let de_tails=localStorage.get("Details")
+            let p1=document.getElementById("p1")
+            let p2=document.getElementById("p2")
+            p1.innerHTML=ip1.value
+            p2.innerHTML=ip2.value
+        })
+    </script> -->
+    <script>
+        let form=document.getElementById("myform");
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            let ip1=document.getElementById("ip1")
+            let ip2=document.getElementById("ip2");
+            let data={name:ip1.value,city:ip2.value}
+            let arr=JSON.parse(localStorage.getItem("U_Details"))||[]
+            arr.push(data)
+            localStorage.setItem("U_Details",JSON.stringify(arr))
+        })
+    </script>
+</body>
+</html>

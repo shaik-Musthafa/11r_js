@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="icon" href="./assests/luffy3.png" />
+    <style>
+
+      .container {
+        justify-content: center;
+        align-content: center;
+        box-shadow: 2px 5px 10px rgb(192, 208, 208);
+        border-radius: 20px;
+        height: 350px;
+        background: transparent;
+        background-image: url(./assests/luffy3.png);
+        width: 250px;
+        row-gap: 10px;
+        column-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .inp {
+        /* color: rgb(224, 62, 62); */
+        background-image: url(./assests/sunny1.png);
+        margin-left: 8px;
+        /* background-color: aliceblue; */
+        border-color: rgb(108, 171, 226);
+        margin-top: 10px;
+        height: 50px;
+        border-radius: 10px;
+        width: 200px;
+      }
+      .btn {
+        background-image: url(./assests/luffy2.png);
+        background-color: rgb(220, 203, 169);
+        color: white;
+        width: 40px;
+        margin-left: 10px;
+        height: 40px;
+      }
+      .btn1 {
+        background-image: url(./assests/luffy.png);
+        color: white;
+        background-color: rgb(224, 247, 186);
+        margin-left: 10px;
+        width: 230px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input class="inp" type="text" id="display" />
+      <button class="btn" onclick="clearDisplay()">A/C</button>
+      <button class="btn" class="btn" onclick="addvalue('1')">1</button>
+      <button class="btn" onclick="addvalue('2')">2 </button>
+      <button class="btn" onclick="addvalue('3') ">3</button>
+      <button class="btn" onclick="addvalue('4')">4</button>
+      <button class="btn" onclick="addvalue('5')">5</button>
+      <button class="btn" onclick="addvalue('6')">6</button>
+      <button class="btn" onclick="addvalue('7')">7</button>
+      <button class="btn" onclick="addvalue('8')">8</button>
+      <button class="btn" onclick="addvalue('9')">9</button>
+      <button class="btn" onclick="addvalue('0')">0</button>
+      <button class="btn" onclick="addvalue('+')">+</button>
+      <button class="btn" onclick="addvalue('-')">-</button>
+      <button class="btn" onclick="addvalue('/')">/</button>
+      <button class="btn" onclick="addvalue('%')">%</button>
+      <button class="btn" onclick="addvalue('*')">*</button>
+      <button class="btn1" onclick="res('='); playAudio()">=</button>
+    </div>
+    <script>
+      let exp = document.getElementById("display");
+      function addvalue(x) {
+        exp.value += x;
+      }
+      function res() {
+        let cal = eval(exp.value);
+        exp.value = cal;
+      }
+      function clearDisplay() {
+        exp.value = "";
+      }
+    </script>
+<audio id="myAudio" src="./assests/audio/drums_of_liberation.mp3"></audio>
+<script>
+  function playAudio() {
+    document.getElementById('myAudio').play();
+  }
+  function clearDisplay() {
+        exp.value = "";
+      }
+</script>
+
+  </body>
+</html>
