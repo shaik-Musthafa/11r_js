@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe name="tony" style="width: 600px; height: 400px;"></iframe>
+    <a target="tony" onclick="Ads()" href="javascript:void(0)">
+        Click me to play the video
+    </a>
+
+    <script>
+        function Ads() {
+            let iframe=window.frames['tony'];
+            let iframeDoc=iframe.document||iframe.contentDocument
+            iframeDoc.open()
+            iframeDoc.write(`
+                <video id="advideo" width="100%" height="100%" controls autoplay>    
+                    <source src="./assets/video/ad.mp4"/>
+                </video>
+            `)
+            iframeDoc.close();
+            setTimeout(() => {
+                iframeDoc.open();
+                iframeDoc.write(`
+                    <video id="mainVideo" width="100%" height="100%" controls autoplay>
+                        <source src="./assets/video/Chuttamalle  Devara Second Single  NTR  Janhvi Kapoor  Anirudh Ravichander  Shilpa Rao  27 Sep.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                `);
+                iframeDoc.close();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
