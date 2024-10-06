@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demo1(x){
+            setTimeout(()=>{
+                console.log("executed first");
+                x()
+            },3000)
+        }
+        function demo2(y){
+            setTimeout(() => {
+                console.log("executed second");      
+                y()
+            }, 2000);
+        }
+        function demo3(){
+           setTimeout(()=>{
+            console.log("executed third");
+           },1000)
+        }
+        demo1(()=>{demo2(()=>{demo3()})})
+    </script>
+</body>
+</html>

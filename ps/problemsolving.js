@@ -28,7 +28,6 @@
 // }
 // for(i=10;!(i<1);i--){
 //     console.log(i);
-    
 // }
 // factorial
 // num = prompt("enter a number: ")

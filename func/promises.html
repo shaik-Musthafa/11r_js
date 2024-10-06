@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"musthafa",
+            name1:"shaik"
+        }
+        function demo(resolve,reject){
+            if(obj.name2){
+                return resolve("name is available")
+            }else{
+                return reject ("name is not avalable")
+            }
+        } let inp =new Promise(demo).then((res)=>console.log(res)).catch((rej)=>console.log(rej))
+    </script>
+</body>
+</html>

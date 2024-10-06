@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       function demo(){
+        setTimeout(()=>{
+            console.log("execute will be delayed")
+        },2000)
+       }
+       demo()
+       function demo1(){
+        count=0
+        let z=setInterval(()=>{
+            console.log("it will execute for mentioned interval")
+            count++
+            if(count==1){
+                clearInterval(z)
+            }
+        },3000)
+       }
+       demo1()
+    </script>
+</body>
+</html> 
