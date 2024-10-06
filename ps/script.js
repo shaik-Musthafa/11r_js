@@ -29,4 +29,16 @@ count= 0;
 //     }
 //     console.log(res);
 // }
+let rows = Number(prompt("Enter the number of rows: "));
+for (let i = 1; i <= rows; i++) {
+    let res = "";
+    for (let j = 1; j <= rows; j++) {
+        if (j === i || i + j === rows + 1) {
+            res += "* "; 
+        } else {
+            res += "  "; 
+        }
+    }
+    console.log(res);
+}
 
