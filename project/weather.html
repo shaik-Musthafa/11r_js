@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container{
+       /* border: 2px solid ;  */
+       height: 400px;
+       width:400px;
+       border-radius: 20px;
+       background-image: url(../project/assets/giphy.webp);
+
+      }
+      #heading{
+        position: relative;
+        top: 20px;
+        margin-left: 80px;
+        color: rgb(235, 239, 243);
+      }
+      #city{
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+        left: 120px;
+        background: transparent;
+        background-image: url(../assets/luffy3.png);
+        color:rgb(216, 208, 208);
+      }
+      #getweather{
+        background-color:skyblue;
+        height: 30px;
+        background: transparent;
+        position: relative;
+        left: 150px;
+        border: none;
+      }
+      #container1{
+        height: 200px;
+        /* border: 2px solid ; */
+        text-align: center;
+        position:relative;
+        left: 80px;
+        width: 250px;
+        backdrop-filter: blur(10px);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading"><i> Weather Forecast </i></h1>
+      <input type="text" id="city" placeholder="Enter a City" /><br><br>
+      <button id="getweather">Get Weather</button>
+      <p id="para"></p>
+    </div>
+    <script>
+      let button = document.getElementById("getweather");
+      button.addEventListener("click", (e) => {
+        let city = document.getElementById("city").value;
+        if (city) {
+          fetchdata(city);
+        } else {
+          alert(`Enter a City`);
+        }
+      });
+      async function fetchdata(city) {
+        let apikey = `51fe958114237a0ab2df2ccdf3a051f5`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
+        let response = await fetch(url)
+        let result= await response.json()
+        if (!response.ok) {
+          alert("ener a valid city")
+        }
+        let data=document.getElementById("para")
+        data.innerHTML=`<div id="container1"<h2>City: ${result.name}</h2>
+                        <p>Humidity: ${result.main.humidity}</p>
+                        <p>Temperature: ${result.main.temp}</p>  
+                        <p>Humididty: ${result.main.humidity}</p      
+                        <p>Description: ${result.weather[0].description}</p>
+                        <p>Wind speed: ${result.wind.speed}</p></div>`
+        console.log(result);
+        
+      }
+    </script>
+  </body>
+</html>
