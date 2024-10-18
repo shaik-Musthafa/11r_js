@@ -8,9 +8,6 @@
       .container{
        /* border: 2px solid ;  */
        height: 400px;
-       position: relative;
-       top: 150px;
-       left: 450px;
        width:400px;
        border-radius: 20px;
        background-image: url(../project/assets/giphy.webp);
@@ -79,7 +76,6 @@
         }
         let data=document.getElementById("para")
         data.innerHTML=`<div id="container1"<h2>City: ${result.name}</h2>
-                        <p>Humidity: ${result.main.humidity}</p>
                         <p>Temperature: ${result.main.temp}</p>  
                         <p>Humididty: ${result.main.humidity}</p      
                         <p>Description: ${result.weather[0].description}</p>
