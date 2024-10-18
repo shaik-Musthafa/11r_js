@@ -20,8 +20,8 @@ for(i=0;i<rows;i++){
 // ABC       CBA
 // AB         BA
 // A           A
-rows=+prompt("enter a number: ")
-alpha=65,pos=1
+rows=+prompt("enter a num: ")
+alpha=65; pos=1
 for(i=0;i<=rows;i++){
     res=" "
     for(j=1;j<=i;j++){
@@ -30,7 +30,15 @@ for(i=0;i<=rows;i++){
         alpha++
     }
     for(k=0;k<rows-i;k++){
-        res+="  "
+        res=res+"  "
     }
     console.log(res.split("").reverse().join(""));
 }
+// node /tmp/7f1dxs2FgP.js
+// enter a num: 5
+           
+//          A 
+//        C B 
+//      F E D 
+//    J I H G 
+//  O N M L K 
