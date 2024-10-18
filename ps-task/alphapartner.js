@@ -20,4 +20,17 @@ for(i=0;i<rows;i++){
 // ABC       CBA
 // AB         BA
 // A           A
-
+rows=+prompt("enter a number: ")
+alpha=65,pos=1
+for(i=0;i<=rows;i++){
+    res=" "
+    for(j=1;j<=i;j++){
+        res=res+String.fromCharCode(alpha)+" "
+        pos++
+        alpha++
+    }
+    for(k=0;k<rows-i;k++){
+        res+="  "
+    }
+    console.log(res.split("").reverse().join(""));
+}
